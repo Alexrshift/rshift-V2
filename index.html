@@ -90,6 +90,37 @@ h1 {
   <span class="accent">autrement.</span>
 </h1>
 </main>
+  <section id="projects" class="projects">
+
+  <div class="projects-header">
+    <h2>NOS<br>PROJETS</h2>
+    <p>
+      Tournage, post-production, réalisation, consulting...
+      Chaque projet bénéficie de toute notre attention,
+      alliant exigence professionnelle et sens du détail.
+      Découvrez quelques-unes de nos plus belles collaborations.
+    </p>
+  </div>
+
+  <div class="project-gallery">
+    <button class="project-arrow prev" aria-label="Projet précédent"
+            onclick="changeProject(-1)">&#10094;</button>
+
+    <img id="project-image" src="700.png" alt="700 Requins">
+
+    <button class="project-arrow next" aria-label="Projet suivant"
+            onclick="changeProject(1)">&#10095;</button>
+  </div>
+
+  <div class="project-info">
+    <h3 id="project-title">700 REQUINS</h3>
+    <p id="project-description">
+      Exploration scientifique / Passe de Fakarava / Polynésie –
+      Prod. ARTE / Le Cinquième Rêve
+    </p>
+  </div>
+
+</section>
   <script>
     const canvas = document.getElementById("particles");
     const ctx = canvas.getContext("2d");
