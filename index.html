@@ -215,6 +215,26 @@ h1 {
 
 </section>
   <script>
+    const projects = [
+  {
+    image: "700.png",
+    title: "700 REQUINS",
+    description: "Exploration scientifique / Passe de Fakarava / Polynésie – Prod. ARTE / Le Cinquième Rêve"
+  }
+];
+
+let currentProject = 0;
+
+function changeProject(direction) {
+  currentProject = (currentProject + direction + projects.length) % projects.length;
+
+  const project = projects[currentProject];
+
+  document.getElementById("project-image").src = project.image;
+  document.getElementById("project-image").alt = project.title;
+  document.getElementById("project-title").textContent = project.title;
+  document.getElementById("project-description").textContent = project.description;
+}
     const canvas = document.getElementById("particles");
     const ctx = canvas.getContext("2d");
     let particles = [];
