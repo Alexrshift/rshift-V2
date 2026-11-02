@@ -147,6 +147,47 @@ h1 {
     max-height: none;
   }
 }
+  /* Positionnement des flèches du diaporama */
+
+.project-gallery {
+  position: relative;
+}
+
+.project-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  background: rgba(6, 22, 43, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.project-arrow.prev {
+  left: 15px;
+}
+
+.project-arrow.next {
+  right: 15px;
+}
+
+.project-arrow:hover {
+  background: rgba(112, 202, 255, 0.8);
+  color: #06162b;
+}
   </style>
 </head>
 <body>
